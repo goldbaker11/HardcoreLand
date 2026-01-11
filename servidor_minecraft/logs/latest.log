@@ -1,0 +1,29 @@
+[23:47:02] [main/INFO]: Loading Minecraft 1.21.10 with Fabric Loader 0.18.2
+[23:47:02] [main/WARN]: Mod resolution failed
+[23:47:02] [main/INFO]: Immediate reason: [HARD_DEP_NO_CANDIDATE biomesoplenty 21.10.0.4 {depends fabric @ [*]}, ROOT_FORCELOAD_SINGLE biomesoplenty 21.10.0.4]
+[23:47:02] [main/INFO]: Reason: [HARD_DEP biomesoplenty 21.10.0.4 {depends fabric @ [*]}, HARD_DEP biomesoplenty 21.10.0.4 {depends glitchcore @ [>=21.10.0.3]}, HARD_DEP terrablender 21.10.0.0 {depends fabric @ [*]}, HARD_DEP cristellib 3.0.3 {depends fabric-api @ [>=0.135.0+1.21.10]}, HARD_DEP jei 26.2.0.30 {depends fabric-api @ [>=0.137.0+1.21.10]}, HARD_DEP mes 2.0.0 {depends fabric-resource-loader-v0 @ [*]}, HARD_DEP moogs_structures 1.1.0-1.21.5-1.21.10-fabric {depends fabric @ [*]}, HARD_DEP mvs 5.0.3 {depends fabric-resource-loader-v0 @ [*]}, HARD_DEP t_and_t 1.13.7 {depends fabric @ [*]}]
+[23:47:02] [main/INFO]: Fix: add [add:fabric 1 ([(-∞,∞)]), add:glitchcore 21.10.0.3 ([[21.10.0.3,∞)]), add:fabric-api 0.137.0+1.21.10 ([[0.137.0+1.21.10,∞)]), add:fabric-resource-loader-v0 1 ([(-∞,∞)])], remove [], replace []
+[23:47:02] [main/ERROR]: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Install fabric, any version.
+	 - Install glitchcore, version 21.10.0.3 or later.
+	 - Install fabric-api, version 0.137.0+1.21.10 or later.
+	 - Install fabric-resource-loader-v0, any version.
+More details:
+	 - Mod 'BiomesOPlenty' (biomesoplenty) 21.10.0.4 requires any version of fabric, which is missing!
+	 - Mod 'BiomesOPlenty' (biomesoplenty) 21.10.0.4 requires version 21.10.0.3 or later of glitchcore, which is missing!
+	 - Mod 'TerraBlender' (terrablender) 21.10.0.0 requires any version of fabric, which is missing!
+	 - Mod 'Cristel Lib' (cristellib) 3.0.3 requires version 0.135.0+1.21.10 or later of fabric-api, which is missing!
+	 - Mod 'Just Enough Items' (jei) 26.2.0.30 requires version 0.137.0+1.21.10 or later of fabric-api, which is missing!
+	 - Mod 'MoogsEndStructures' (mes) 2.0.0 requires any version of fabric-resource-loader-v0, which is missing!
+	 - Mod 'Moog's Structure Lib' (moogs_structures) 1.1.0-1.21.5-1.21.10-fabric requires any version of fabric, which is missing!
+	 - Mod 'MoogsVoyagerStructures' (mvs) 5.0.3 requires any version of fabric-resource-loader-v0, which is missing!
+	 - Mod 'Towns and Towers' (t_and_t) 1.13.7 requires any version of fabric, which is missing!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51) ~[fabric-loader-0.18.2.jar:?]
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:202) ~[fabric-loader-0.18.2.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:142) ~[fabric-loader-0.18.2.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:66) [fabric-loader-0.18.2.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotServer.main(KnotServer.java:23) [fabric-loader-0.18.2.jar:?]
+	at net.fabricmc.loader.impl.launch.server.FabricServerLauncher.main(FabricServerLauncher.java:69) [fabric-loader-0.18.2.jar:?]
+	at net.fabricmc.installer.ServerLauncher.main(ServerLauncher.java:69) [fabric-server-launch.jar:1.1.0]
